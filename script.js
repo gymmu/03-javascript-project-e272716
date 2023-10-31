@@ -4,7 +4,15 @@ export function aufgabe01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    result.push(currentElement)
+    //Falls es ein e ist, hänge es Nicht an die Liste an
+    if (currentElement === "e") {     
+    
+    } else if (currentElement === "E") {  
+     
+    }else {  
+    result.push(currentElement) 
+  }
+ 
   }
   return result.join("")
 }
