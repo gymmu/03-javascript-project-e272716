@@ -15,7 +15,6 @@ Alles gross schreiben.
 Zähle alle `e`s in einem Text.
 
 ## Aufgabe 04
-
 Zähle alle Wörter in einem Text.
 
 ## Aufgabe 05
