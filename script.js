@@ -81,3 +81,31 @@ export function aufgabe08(args) {
   }
   return result.join("")
 }
+export function aufgabe05(args){
+  const input = args
+  const result = [] 
+  let count= 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Falls es ein e ist, hänge es Nicht an die Liste an
+    if (currentElement === currentElement.toUpperCase()){
+    count = count + 1 
+  }
+    }   
+    if (count > 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  export function aufgabe06(args){
+    const input= args
+    const result= []
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+      if(currentElement === ".")
+      return true 
+    }
+    return false 
+  }
