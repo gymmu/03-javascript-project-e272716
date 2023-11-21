@@ -145,4 +145,26 @@ export function aufgabe09(args){
     return false
     }
  
-  
+    export function aufgabe10(args){
+      const input= args
+    if (input.length !== 7) return false
+    //Wenn das nicht der Fall ist nicht die Länge sieben hat, dann machen wir return false
+    if (input[0] !== "#") return false
+    //Wenn das nicht diesen ersten Hexcode ist#OAB2FF, dann return false 
+      // Legaler Textwert
+      for (let i = 1; i < input.length; i++) {
+        const currentElement = input[i]
+        const ascii = currentElement.charCodeAt(0)
+        //von einer Zeichenkette rufe den ascii Wert von dem aktuellen Zeichen
+        if ( 48 <= ascii && ascii <= 57){
+         //wenn 48 kleiner Wert kleiner ist als ascii wert ist, //ist eine Ziffer 
+         //von ascii Tabelle von 0-9 schauen, hier geht es um Ziffer 
+        }else if ( 65 <= ascii && ascii <=70){
+          //Ist A-F
+          //65-70 sind die Buchstammen in der ascii Tabelle
+        }else {
+          return false 
+        }
+      }
+    return true 
+    }
