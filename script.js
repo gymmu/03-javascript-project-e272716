@@ -109,3 +109,40 @@ export function aufgabe05(args){
     }
     return false 
   }
+
+export function aufgabe07(args){
+  const input= args
+  const result= []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Aktuelle Zeichen, und
+    if(currentElement === "u") {
+     if (input[i+1] === "n") {
+      //Das darauf u + 1 also n
+      if (input[i+2] ==="d") {
+        //das darauf + 2 also Un+ d= und 
+        return true 
+      }
+    }  
+  }
+}
+return false 
+
+}
+
+export function aufgabe09(args){
+  const input= args
+  const result= []
+  let len= 0
+  //len=Länge
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+  len++ //Gleich wie len=len + 1
+  }
+    if(len === 6) {
+      return true
+    } 
+    return false
+    }
+ 
+  
