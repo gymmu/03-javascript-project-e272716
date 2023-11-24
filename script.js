@@ -145,7 +145,7 @@ export function aufgabe09(args){
     return false
     }
  
-    export function aufgabe10(args){
+    export function aufgabe10(args) {
       const input= args
     if (input.length !== 7) return false
     //Wenn das nicht der Fall ist nicht die Länge sieben hat, dann machen wir return false
@@ -168,3 +168,16 @@ export function aufgabe09(args){
       }
     return true 
     }
+    export function aufgabe11(args) { 
+      const input = args
+      if (input.length !== 1) return null
+      //Funktionbar wenn etwas grösser als eins ist soll es abrechen.
+
+      for (let i = 0; i < input.length; i++) {
+        const currentElement = input[i]
+        const ascii = currentElement.charCodeAt(0) 
+        return ascii
+    
+      }
+    
+      }
