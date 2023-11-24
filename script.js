@@ -181,3 +181,43 @@ export function aufgabe09(args){
       }
     
       }
+
+      export function aufgabe12(args) {
+        const input = args
+        
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Falls es ein e ist, hänge es Nicht an die Liste an
+    if (currentElement === "e") {     
+      return i
+      //Aktuelle Position
+    } 
+ 
+  }
+  return -1
+}
+
+
+
+      export function aufgabe13(args) {
+        const input = args
+        let pos = -1
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Falls es ein e ist, hänge es Nicht an die Liste an
+    if (currentElement === "e") {     
+      pos = i
+      //Aktuelle Position
+    } 
+ 
+  }
+  return pos
+}
+
+
+
+         
+      
+     
