@@ -191,14 +191,12 @@ export function aufgabe09(args){
     //Falls es ein e ist, hänge es Nicht an die Liste an
     if (currentElement === "e") {     
       return i
-      //Aktuelle Position
+      //Aktuelle Position, zürückgegeben, meldet das ein e gefunden worden ist.
     } 
  
   }
   return -1
 }
-
-
 
       export function aufgabe13(args) {
         const input = args
@@ -214,6 +212,24 @@ export function aufgabe09(args){
  
   }
   return pos
+}
+export function aufgabe14(args) {
+  const input = args
+  let pos= -1
+  let countE = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Falls es ein e ist, hänge es Nicht an die Liste an
+    if (currentElement === "e") {   
+      countE++    //Hier hochegzählt, ++ Zählt um 1 hoch -- um 1 runterzählen
+      if (countE === 3) { //Hier überprüft
+        pos = i 
+      }
+    } 
+ 
+  }
+  return pos
+
 }
 
 
