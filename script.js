@@ -287,7 +287,44 @@ phrases.push(currentPhrase.join(""))
 return (phrases)
  }
 
- 
+export function aufgabe18(args) {
+  const text = args
+  let switchFirst = true 
+  const listFirst = []
+  //Erstellt eine Liste für den Namen
+  const listSecond = []
+  //Erstellt eine Liste für das Alter
+  for (let i = 0; i < text.length; i++) { 
+    //iterieren der Eingaben
+    if (text[i] === " ") {
+      //Wenn der bis jetzt gelesene Text " "enthaltet
+      switchFirst = false //Schalter auf falsch, damit nächste Liste anfängt
+
+   } else {
+        if (switchFirst === true) { 
+          listFirst.push(text[i]) // An erste Liste anhängen 
+ } else { 
+  listSecond.push(text[i])//Sonst bei der zweiten Liste
+ }
+}  
+}
+const name = listFirst.join("") 
+const age = listSecond.join("")
+
+return "Sie heissen " + name + " und sind " + age + " Jahre alt " 
+
+}
+
+export function aufgabe19 (args) { 
+const input = args
+const result = []
+for (let i = 0; i < input.length; i++) { 
+  const currentElement = input[i]
+  result.push(currentElement)
+  result.push(currentElement)//Es wird zwei mal an die Liste gehängt
+   }
+   return result.join("")
+  }
  
 
 
