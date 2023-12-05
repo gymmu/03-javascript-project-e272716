@@ -283,9 +283,12 @@ for (let i = 0; i < text.length; i++) {
     currentPhrase.push(currentElement)
   }
 }
+phrases.push(currentPhrase.join(""))
 return (phrases)
-
  }
+
+ 
+ 
 
 
 
