@@ -4,9 +4,8 @@ export function aufgabe01(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
     if (currentElement === "e") {     
-    
+     //Falls es ein e ist, hänge es Nicht an die Liste an
     } else if (currentElement === "E") {  
      
     }else {  
@@ -14,7 +13,7 @@ export function aufgabe01(args) {
   }
  
   }
-  return result.join("")
+  return result.join("") 
 }
 
 export function aufgabe02 (args) {
@@ -22,7 +21,7 @@ export function aufgabe02 (args) {
   const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    result.push(currentElement.toUpperCase())
+    result.push(currentElement.toUpperCase()) //die Grossbuchstabenversion zurückgibt und dieser wird in eine neue Variable gespeichert
   }
   return result.join("") 
 }
@@ -30,18 +29,18 @@ export function aufgabe03 (args) {
   const input = args
   //Eingabe da rein kommt, Eingabefeld auf der Webseite
   const result = [] 
-  //Am Ende zuruückgeben will, leere Liste wo wir Dinge anhängen am Ende zu einem Text zusammen.
+  //Am Ende zurückgeben will, leere Liste wo wir Dinge anhängen, am Ende zu einem Text zusammen.
   let count = 0
   //Zähler
   for (let i = 0; i < input.length; i++) {
-    //Zeichen für Zeiche das Blatt durchgehe.
+    //Zeichen für Zeichen das Blatt durchgehe.
     const currentElement = input[i]
     //Neue Variable, was wir genau anschauen
     if (currentElement === "e") 
-    //Falls es ein e ist, hänge es Nicht an die Liste an, Übeprüfung.
+    //Falls es ein e ist, hänge es Nicht an die Liste an, Überprüfung.
   {     
     count= count + 1
-    //Dann zählen sie + 1
+    //Zählt + 1
     } else if (currentElement === "E") {  
      count= count + 1
     // Wenn es currenElement E ist +1 zählen
@@ -49,7 +48,7 @@ export function aufgabe03 (args) {
   }
   }
   return count
-  //Geben an den Aufrufer zurück, jemandem melden ohne das einfach nur e aber keiner weiss wie viel. 
+  //Geben an den Aufrufer zurück, jemandem melden aber keiner weiss wie viel. 
 }
 export function aufgabe04 (args){
   const input = args
@@ -57,12 +56,11 @@ export function aufgabe04 (args){
   let count = 1
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
-    if (currentElement === " ") {
-      count = count + 1
+    if (currentElement === " ") { //Falls das aktuelle Zeichen ein Leerschlag ist 
+      count = count + 1 //Zähle + 1
     }   
   }
-  return count
+  return count //Gebe die Anzahl der Zeichen zurück
 }
 export function aufgabe08(args) {
   const input = args
@@ -70,12 +68,11 @@ export function aufgabe08(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
-    if (currentElement === "e") {     
-    result.push(3)
-    //Hängen sie auf der rechten Seite
+    if (currentElement === "e") { //Falls es ein e ist  
+    result.push(3) //Ersetzte es mit einer 3
     } else {  
     result.push(currentElement) 
+    //Hängen sie auf der rechten Seite 
   }
  
   }
@@ -84,16 +81,15 @@ export function aufgabe08(args) {
 export function aufgabe05(args){
   const input = args
   const result = [] 
-  let count= 0
+  let count= 0 //Von 0 starten zu zählen
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
-    if (currentElement === currentElement.toUpperCase()){
-    count = count + 1 
+    if (currentElement === currentElement.toUpperCase()){ //Falls das aktuelle Zeichen ein Grossbuchstabe ist 
+    count = count + 1 //Zähle +1
   }
     }   
-    if (count > 0) {
-      return true
+    if (count > 0) { //Wenn das Zeichen grösser als 0 ist 
+      return true 
     } else {
       return false
     }
@@ -104,10 +100,10 @@ export function aufgabe05(args){
     const result= []
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
-      if(currentElement === ".")
+      if(currentElement === ".") //Falls das Sonderzeichen ''.'' ist return true 
       return true 
     }
-    return false 
+    return false //Sonst ist es falsch, return false 
   }
 
 export function aufgabe07(args){
@@ -139,7 +135,7 @@ export function aufgabe09(args){
     const currentElement = input[i]
   len++ //Gleich wie len=len + 1
   }
-    if(len === 6) {
+    if(len === 6) { //Wenn die Länge 6 Zeichen lang ist 
       return true
     } 
     return false
@@ -157,7 +153,7 @@ export function aufgabe09(args){
         const ascii = currentElement.charCodeAt(0)
         //von einer Zeichenkette rufe den ascii Wert von dem aktuellen Zeichen
         if ( 48 <= ascii && ascii <= 57){
-         //wenn 48 kleiner Wert kleiner ist als ascii wert ist, //ist eine Ziffer 
+         //wenn 48 kleiner ist als ascii Wert //ist eine Ziffer 
          //von ascii Tabelle von 0-9 schauen, hier geht es um Ziffer 
         }else if ( 65 <= ascii && ascii <=70){
           //Ist A-F
@@ -171,11 +167,11 @@ export function aufgabe09(args){
     export function aufgabe11(args) { 
       const input = args
       if (input.length !== 1) return null
-      //Funktionbar wenn etwas grösser als eins ist soll es abrechen.
+      //Functionbar, wenn etwas grösser als eins ist soll es abrechen.
 
       for (let i = 0; i < input.length; i++) {
         const currentElement = input[i]
-        const ascii = currentElement.charCodeAt(0) 
+        const ascii = currentElement.charCodeAt(0) //Gibt den ascii code vom aktuellen Zeichen zurück
         return ascii
     
       }
@@ -188,7 +184,6 @@ export function aufgabe09(args){
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
     if (currentElement === "e") {     
       return i
       //Aktuelle Position, zürückgegeben, meldet das ein e gefunden worden ist.
@@ -204,8 +199,7 @@ export function aufgabe09(args){
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
-    if (currentElement === "e") {     
+    if (currentElement === "e") {    
       pos = i
       //Aktuelle Position
     } 
@@ -219,7 +213,6 @@ export function aufgabe14(args) {
   let countE = 0
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
     if (currentElement === "e") {   
       countE++    //Hier hochegzählt, ++ Zählt um 1 hoch -- um 1 runterzählen
       if (countE === 3) { //Hier überprüft
@@ -238,8 +231,7 @@ export function aufgabe15(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    //Falls es ein e ist, hänge es Nicht an die Liste an
-    if (currentElement === " ") {     
+    if (currentElement === " ") {    //Die Zeichen bis zum ersten Leerzeichen  
       return result.join("") //ich breche hier ab
     }
     
@@ -255,8 +247,8 @@ let switchFirst = true
 const listFirst = []
 const listSecond = []
 for (let i = 0; i < text.length; i++) {
-  if (text[i] === "$") {
-    switchFirst = false
+  if (text[i] === "$") { //Falls es $ ist 
+    switchFirst = false //schalte auf falsch
   } else {
     if (switchFirst === true) {
       listFirst.push(text[i])
@@ -265,7 +257,7 @@ for (let i = 0; i < text.length; i++) {
     }
   }
 }
-return [listFirst.join(""), listSecond.join("")]
+return [listFirst.join(""), listSecond.join("")] //Gibt zwei Listen zurück
  } 
 
  export function aufgabe17(args) {
@@ -299,7 +291,6 @@ export function aufgabe18(args) {
     if (text[i] === " ") {
       //Wenn der bis jetzt gelesene Text " "enthaltet
       switchFirst = false //Schalter auf falsch, damit nächste Liste anfängt
-
    } else {
         if (switchFirst === true) { 
           listFirst.push(text[i]) // An erste Liste anhängen 
@@ -311,7 +302,7 @@ export function aufgabe18(args) {
 const name = listFirst.join("") 
 const age = listSecond.join("")
 
-return "Sie heissen " + name + " und sind " + age + " Jahre alt " 
+return "Sie heissen " + name + " und sind " + age + " Jahre alt" 
 
 }
 
@@ -331,7 +322,6 @@ for (let i = 0; i < input.length; i++) {
     const result= []
     for (let i = 0; i < input.length; i++) {
       const currentElement = input[i]
-      //Aktuelle Zeichen, und
       if(currentElement === ".") {
         if (input[i +1] === " ") {//i steht für Position
        
@@ -343,6 +333,17 @@ for (let i = 0; i < input.length; i++) {
  return result.join("")
   
   }
+
+export function aufgabe21 (args) {
+  const input = args
+  const result = []
+  for (let i =input.length-1;i >=0; i-- ) { // Zahlrichtung umdrehen, von hinten nach vorne einlesen
+    const currentElement = input[i]
+
+    result.push(currentElement) //Die Zeichen werden von hinten geschrieben
+   }
+   return result.join("")
+} 
   
 
 
