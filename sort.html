@@ -29,7 +29,21 @@
 
       <section>
         <h3>So funktioniert der BubbleSort</h3>
-        hier erklären wie Bubble resort funktioniert, Videos anschauen
+        Ein häufig zu lösendes Problem besteht darin, die Elemente nach ihrer Grösse zu sortieren. Ein einfacher Algorithmus, um dieses Ziel zu erreichen, ist der Bubblesort-Algorithmus. 
+        Beim durchlaufen des Arrays werden die zwei Nachbarszahlen miteinander verglichen und bei Bedarf ausgetauscht. Wenn man den ersten Durchlauf hinter sich hat, steht das grösste Element am Ende des Arrays.
+        Dieser Verlauf wird nochmals durchgeführt aber ohne das letzte Element. Dannach findet man das zweitgrösste Element. Diesen Vorgang macht man bis alle Elemnte, ihrer grösse nach, sortiert sind.
+
+        (3,8,2,6) -> Es werden die erste Zahlenpärchen verglichen, 3 und 8, 8 ist grösser als 3 also bleibt es in dieser Reihenfolge.
+        (3,8,2,6) -> Es werden die Zahlen 8 und 2 miteinander verglichen, 8 ist grösser als 2, daher werden die Plätze getauscht.
+        (3,2,8,6) -> Es werden die Zahlen 8 und 6 miteinander verglichen, 8 ist grösser als 6, daher werden die Plätze getauscht.
+        (3,2,6,8) -> Das letzte Element bleibt, kann nicht weiterhin sortiert werden und wir beginnen von vorne. Die Zahlen 2 und 3 werden miteinander verglichen, 3 ist grösser als 2, daher werden die Plätze getauscht.
+        (2,3,6,8) -> Es werden die Zahlen 3 und 6 miteinander verglichen, 6 ist grösser als 3, also bleibt es so.
+        (2,3,6,8) -> Es werden die Zahlen 6 und 8 miteinander verglichen, 8 ist grösser als 6, also bleibt es so.
+        
+        Alle Elemente sind ihrer grössen nach sortiert, von der kleinsten Zahl bis zur grössten.
+        Die grössten Elemente steigen wie Luftblässchen nach oben, daher der Name BubbleSort.
+        Dieses Verfahren ist sehr einfach aber nicht sehr effizient.
+    
       </section>
     </div>
 
